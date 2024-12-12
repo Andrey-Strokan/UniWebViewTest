@@ -1,7 +1,16 @@
+## About issue
+Sometimes on iOS 18 Content loads very slowly. This is what users see (see image)
+![zzz1](https://github.com/user-attachments/assets/5cb8c038-61cf-439a-b255-537f26135aa6)
+
+
 ## Common
 - I have tested iOS 17.7.2 and below, there is no such issue.
 - On iOS 18.1.1 the problem is reproducible, but not always (from time to time)
 
+## Useful
+- This GitHub project contains an empty Unity project with the latest version of UniWebView, which I used for debugging.
+> [!warning]
+> Please note that the project uses [git-lfs](https://git-lfs.com/).
 
 ## Where I looked for the issue
 1. iOS version
@@ -51,8 +60,7 @@ I profiled the traffic and found some differences:
     ![ddd2](https://github.com/user-attachments/assets/671c5c06-2100-4b5f-96c1-f716be931cfc)
 
 ### 5. RAM&Allocations
-The amount of RAM in the test devices was the same (8GB).  Allocations profiling yielded no results
-
+The amount of RAM in the test devices was the same (8GB). Allocations profiling yielded no results
 
 ## Additionally
 - I guess it's a caching issue.
